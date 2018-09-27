@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>hight button style</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>hight modify</h1>
+        </div>
+
+        <div data-role="content">
+            <a href="#popupCloseRight" data-rel="popup" data-role="button">Close Right</a>
+            <a href="#popupCloseLeft" data-rel="popup" data-role="button">Close Left</a>
+            <a href="#popupUndismissible" data-rel="popup" data-role="button">Undismissible</a>
+
+            <a href="#popupCloseRight1" data-rel="popup" data-role="button">Close Right 1</a>
+            <a href="#popupCloseLeft1" data-rel="popup" data-role="button">Close Left 1</a>
+            <a href="#popupUndismissible1" data-rel="popup" data-role="button">Undismissible 1</a>
+
+            <div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width: 280px">
+                <a href="#" data-rel="back" data-role="button"
+                   data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p>check right than close!</p>
+            </div>
+
+            <div data-role="popup" id="popupCloseLeft" class="ui-content" style="max-width: 280px">
+                <a href="#" data-rel="back" data-role="button"
+                   data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+                <p>check left than close!</p>
+            </div>
+
+            <div data-role="popup" id="popupUndismissible" class="ui-content" style="max-width: 280px" data-dismissible="false">
+                <a href="#" data-rel="back" data-role="button"
+                   data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+                <p>Check empty area can not close</p>
+            </div>
+
+            <div data-role="popup" id="popupCloseRight1" class="ui-content" style="max-width: 280px">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>empty title</h1>
+                </div>
+                <a href="#" data-rel="back" data-role="button" data-theme="a"
+                   data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p>Check right than close!</p>
+            </div>
+
+            <div data-role="popup" id="popupCloseLeft1" class="ui-content" style="max-width: 280px">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>empty title</h1>
+                </div>
+                <a href="#" data-rel="back" data-role="button" data-theme="a"
+                   data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+                <p>check left than close!</p>
+            </div>
+
+            <div data-role="popup" id="popupUndismissible1" class="ui-content" style="max-width: 280px" data-dismissible="false">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>this is a empty popup title</h1>
+                </div>
+                <a href="#" data-rel="back" data-role="button"
+                   data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+                <p>Check empty area can not close!</p>
+            </div>
+        </div>
+
+
+
+        <div data-role="footer" data-position="fixed">
+            <h1>hight modify</h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
